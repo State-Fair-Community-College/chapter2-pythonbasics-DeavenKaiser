@@ -27,7 +27,7 @@ jobs:
           10
           40
           15
-        expected-output: "(?s)(?=.*\\bblue\\b)(?=.*\\b2\\b)(?=.*10\\.8)(?=.*\\$600\\.00)\n"
+        expected-output: blue[\s\S]*2[\s\S]*10\.8[\s\S]*\$600\.00
         comparison-method: regex
         timeout: 1
         max-score: 5
