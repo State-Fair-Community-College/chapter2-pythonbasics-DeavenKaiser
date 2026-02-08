@@ -27,11 +27,16 @@ jobs:
           10
           40
           15
-        expected-output: |-
-          Your favorite color is blue
-          The total is 2
-          Final price: 10.8
-          You earned $600.00 this week.
+        expected-output: |
+          Hello, Your Name
+
+          Enter your favorite color: Your favorite color is blue
+
+          Enter the first number: Enter the second number: The total is 2
+
+          Enter the price of an item: Final price: 10.8
+
+          Enter hours worked: Enter hourly pay: You earned $600.00 this week.
         comparison-method: contains
         timeout: 1
         max-score: 5
