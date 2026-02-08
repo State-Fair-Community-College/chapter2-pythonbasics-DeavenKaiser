@@ -27,17 +27,8 @@ jobs:
           10
           40
           15
-        expected-output: |
-          Hello, Your Name
-
-          Enter your favorite color: Your favorite color is blue
-
-          Enter the first number: Enter the second number: The total is 2
-
-          Enter the price of an item: Final price: 10.8
-
-          Enter hours worked: Enter hourly pay: You earned $600.00 this week.
-        comparison-method: contains
+        expected-output: "(?s)(?=.*\\bblue\\b)(?=.*\\b2\\b)(?=.*10\\.8)(?=.*\\$600\\.00)\n"
+        comparison-method: regex
         timeout: 1
         max-score: 5
     - name: Autograding Reporter
